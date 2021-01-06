@@ -21,7 +21,7 @@
 ## MAX-7Q GPS module
 
     这里以MAX-7Q为例来说明GPS模块。
-    我们使用NMEA协议模式进行通信, NMEA协议是GPS导航设备统一的RTCM标准协议。
+    我们使用UBX协议和NMEA协议模式进行通信, NMEA协议是GPS导航设备统一的RTCM标准协议。
     MAX-7Q包括UART接口和DDC/I2C接口，实际操作中使用UART接口进行通信。
     RF_IN引脚用于连接外部GPS天线。
 
@@ -33,6 +33,12 @@
     GPS卫星信号分为L1和L2，频率分别为1575.42MHZ和1228MHZ，
     其中L1为开放的民用信号，信号为圆形极化。
     信号强度为-166dBW左右，属于比较弱的信号。 这些特点决定了要为GPS信号的接收准备专门的天线。
+
+## UBX协议
+
+    这里使用图片信息简单介绍一下UBX协议，如下图：
+
+![avatar](./ubx-protocl.png)
 
 ## NMEA协议
 
